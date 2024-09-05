@@ -1,0 +1,99 @@
+.choice-container {
+    display: flex;
+    margin-bottom: 1rem;
+    width: 100%;
+    font-size: 1.8rem;
+    border: 0.1rem solid rgb(86, 165, 235, 0.25);
+    border-radius: 50px;
+    background-color: white;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+#game {
+    justify-content: center;
+    text-align: center;
+}
+
+.choice-prefix {
+    padding: 1rem 2rem;
+    margin: 0.3rem;
+    background-color: #0000ff;
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+}
+
+.choice-text {
+    padding: 1.5rem;
+    width: 100%;
+    color: black;
+}
+
+.correct {
+    background-color: #54dd74;
+}
+
+.incorrect {
+    background-color: #f34355;
+}
+
+#head {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.head-prefix {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.head-main-text {
+    text-align: center;
+}
+
+#head-item-time{
+    background-color: #ff8800;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    width: 105px;
+    height:105px;
+}
+
+#ProgressBar {
+    width: 20rem;
+    height: 3.7rem;
+    border: 0.3rem solid #00ff2a;
+    margin-top: 1.5rem;
+}
+
+#ProgressBarFull {
+    height: 3.4rem;
+    background-color: #00ff2a;
+    width: 0%;
+}
+
+#loader {
+    border: 1.6rem solid white;
+    border-radius: 50%;
+    border-top: 1.6rem solid #56a5eb;
+    width: 12rem;
+    height: 12rem;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

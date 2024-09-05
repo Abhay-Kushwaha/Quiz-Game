@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style/app.css" />
+    <link rel="stylesheet" href="style/game.css" />
+</head>
+
+<body>
+    <div class="backdrop"></div>
+    <div class="whole">
+        <div>
+            <img src="images/anime_boy.png" alt="sasuke" class="image">
+        </div>
+        
+        <div class="container">
+            <div id="loader"></div>
+            <div id="game" class="hidden">
+                <div id="head">
+                    <div id="head-item">
+                        <p id="progress" class="head-prefix">
+                            Question
+                        </p>
+                        <div id="ProgressBar">
+                            <div id="ProgressBarFull"></div>
+                        </div>
+                    </div>
+                    <div id="head-item-time">
+                        <p id="timer" class="head-prefix">
+                            Time
+                        </p>
+                        <div>
+                            <h1 class="head-main-text" id="time">
+                                15
+                            </h1>
+                        </div>
+                    </div>
+                    <div id="head-item">
+                        <p class="head-prefix">
+                            Score
+                        </p>
+                        <h1 class="head-main-text" id="score">
+                            0
+                        </h1>
+                    </div>
+                </div>
+                <h2 id="question"></h2>
+                <div class="choice-container">
+                    <p class="choice-prefix">A</p>
+                    <p class="choice-text" data-number="1"></p>
+                </div>
+                <div class="choice-container">
+                    <p class="choice-prefix">B</p>
+                    <p class="choice-text" data-number="2"></p>
+                </div>
+                <div class="choice-container">
+                    <p class="choice-prefix">C</p>
+                    <p class="choice-text" data-number="3"></p>
+                </div>
+                <div class="choice-container">
+                    <p class="choice-prefix">D</p>
+                    <p class="choice-text" data-number="4"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script/game.js"></script>
+</body>
+
+</html>

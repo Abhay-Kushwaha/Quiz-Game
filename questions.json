@@ -1,0 +1,82 @@
+[
+    {
+        "question": "Inside which HTML element do we put the JavaScript?",
+        "choice1": "<script>",
+        "choice2": "<javascript>",
+        "choice3": "<js>",
+        "choice4": "<scripting>",
+        "answer": 1
+    },
+    {
+        "question": "What is the correct syntax for referring to an external script called 'file.js'?",
+        "choice1": "<script href='file.js'>",
+        "choice2": "<script name='file.js'>",
+        "choice3": "<script src='file.js'>",
+        "choice4": "<script file='file.js'>",
+        "answer": 3
+    },
+    {
+        "question": "How do you write 'Hello World' in an alert box?",
+        "choice1": "msgBox('Hello World');",
+        "choice2": "alertBox('Hello World');",
+        "choice3": "msg('Hello World');",
+        "choice4": "alert('Hello World');",
+        "answer": 4
+    },
+    {
+        "question": "How do you create a function in JavaScript?",
+        "choice1": "function myFunction()",
+        "choice2": "function:myFunction()",
+        "choice3": "function = myFunction()",
+        "choice4": "function => myFunction()",
+        "answer": 1
+    },
+    {
+        "question": "How do you call a function named 'myFunction'?",
+        "choice1": "call myFunction()",
+        "choice2": "call function myFunction()",
+        "choice3": "myFunction()",
+        "choice4": "Call.myFunction()",
+        "answer": 3
+    },
+    {
+        "question": "How to write an IF statement in JavaScript?",
+        "choice1": "if i == 5 then",
+        "choice2": "if i = 5",
+        "choice3": "if (i == 5)",
+        "choice4": "if i = 5 then",
+        "answer": 3
+    },
+    {
+        "question": "How does a WHILE loop start?",
+        "choice1": "while i = 1 to 10",
+        "choice2": "while (i <= 10; i++)",
+        "choice3": "while (i <= 10)",
+        "choice4": "while (i++)",
+        "answer": 3
+    },
+    {
+        "question": "How does a FOR loop start?",
+        "choice1": "for (i = 0; i <= 5; i++)",
+        "choice2": "for i = 1 to 5",
+        "choice3": "for (i <= 5; i++)",
+        "choice4": "for (i = 0; i <= 5)",
+        "answer": 1
+    },
+    {
+        "question": "How can you add a comment in a JavaScript?",
+        "choice1": "'This is a comment",
+        "choice2": "//This is a comment",
+        "choice3": "<!--This is a comment-->",
+        "choice4": "`This is a comment`",
+        "answer": 2
+    },
+    {
+        "question": "What is the correct way to write a JavaScript array?",
+        "choice1": "var colors = 'red', 'green', 'blue'",
+        "choice2": "var colors = 1 = ('red'), 2 = ('green'), 3 = ('blue')",
+        "choice3": "var colors = ['red', 'green', 'blue']",
+        "choice4": "var colors = (1:'red', 2:'green', 3:'blue')",
+        "answer": 3
+    }
+]

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>High Scores</title>
+    <link rel="stylesheet" href="style/app.css" />
+    <style>
+        #HSList {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 4rem;
+        }
+
+        #finalScore{
+            text-decoration: underline;
+        }
+
+        .high-score {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .high-score:hover {
+            transform: scale(1.025);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="backdrop"></div>
+    <div class="whole">
+        <div>
+            <img src="images/anime_boy.png" alt="sasuke" class="image">
+        </div>
+        <div class="container">
+            <div id="highScores">
+                <h1 id="finalScore">High Scores</h1>
+                <ul id="HSList"></ul>
+                <a class="btn" href="index.html">Go Home</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        const HSList = document.getElementById("HSList");
+        const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+
+        HSList.innerHTML = highScores
+            .map(score => {
+                return `<li class="high-score">${score.name} - ${score.score}</li>`;
+            })
+            .join("");
+    </script>
+</body>
+
+</html>
